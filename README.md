@@ -1,5 +1,7 @@
 # kong-ini
 
+![CI](https://github.com/mrtazz/kong-ini/workflows/CI/badge.svg) [![](https://godoc.org/github.com/alecthomas/kong?status.svg)](http://godoc.org/github.com/alecthomas/kong)
+
 A [kong](https://github.com/alecthomas/kong) configuration resolver for `.ini`
 files.
 
