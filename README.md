@@ -5,7 +5,7 @@ files.
 
 ## Usage
 
-```
+```go
 var cli struct {
     Config kong.ConfigFlag `help:"Load configuration."`
 }
@@ -15,7 +15,7 @@ parser, err := kong.New(&cli, kong.Configuration(kongini.Loader, "/etc/myapp/con
 ### Config Format
 Given the following app definition:
 
-```
+```go
 var cli struct {
 	Config     kong.ConfigFlag `help:"Load configuration."`
 	Debug      bool            `kong:"name='debug'"`
@@ -36,7 +36,7 @@ var cli struct {
 
 This would be the corresponding `.ini` file:
 
-```
+```ini
 debug = true
 string = "a string"
 int = 1
